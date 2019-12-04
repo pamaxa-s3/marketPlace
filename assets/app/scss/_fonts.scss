@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'Roboto-Regular', sans-serif;
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-         url('../fonts/Roboto-Regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?ytssfg');
     src:  url('../fonts/icomoon.eot?ytssfg#iefix') format('embedded-opentype'),
@@ -32,26 +24,4 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-  .icon-map-marker:before {
-    content: "\f041";
-  }
-  .icon-shopping-cart:before {
-    content: "\f07a";
-  }
-  .icon-phone:before {
-    content: "\f095";
-  }
-  .icon-bolt:before {
-    content: "\f0e7";
-  }
-  .icon-flash:before {
-    content: "\f0e7";
-  }
-  .icon-angle-right:before {
-    content: "\f105";
-  }
-  .icon-location-arrow:before {
-    content: "\f124";
-  }
-  
+ 
