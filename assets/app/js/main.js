@@ -1,6 +1,6 @@
 $(function () {
 
-
+    //rating
     $('.rate-star').rateYo({
         rating: 4.5,
         starWidth: '17px',
@@ -9,34 +9,36 @@ $(function () {
         normalFill: '#d5d5d5',
     });
 
-
+    //slider header
     $('.create-slider__inner').slick({
         arrows: false,
         autoplay: true,
         dots: false,
     });
 
-
+    //slider_featured
     $('.featured-item__slider').slick({
         arrows: false,
         dots: false,
     });
 
-
-    $('.arow-prev').on('click', function (event) {
+    //arows slider-featured
+    $('.featured-slider__arow-prev').on('click', function (event) {
         event.preventDefault();
 
         $('.featured-item__slider').slick('slickPrev')
     });
 
 
-    $('.arow-next').on('click', function (event) {
+    $('.featured-slider__arow-next').on('click', function (event) {
         event.preventDefault();
 
         $('.featured-item__slider').slick('slickNext')
     });
 
+    //arows slider-featured END
 
+    //filter START
     let filter = $('[data-filter]');
 
     filter.on('click', function () {
@@ -59,6 +61,38 @@ $(function () {
         }
     });
 
+    // filter added class 'active'
+
+    $(".fil").click(function () {
+        $(".fil").removeClass("active");
+        $(this).toggleClass("active");
+    });
+
+    //filter END
+
+    //slider-followers
+    $('.followers__inner').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false,
+        dots: false,
+    });
+
+    $('.followers-slider__prev').on('click', function (event) {
+        event.preventDefault();
+
+        $('.followers__inner').slick('slickPrev')
+    });
+
+
+    $('.followers-slider__next').on('click', function (event) {
+        event.preventDefault();
+
+        $('.followers__inner').slick('slickNext')
+    });
+
+    //slider-followers END
 
 
     // $('.js-range-slider').ionRangeSlider({
