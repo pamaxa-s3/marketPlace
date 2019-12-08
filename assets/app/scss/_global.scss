@@ -83,18 +83,19 @@ body {
 
 .btn,
 .btn-sm {
-  cursor: pointer;
+    cursor: pointer;
     outline: none;
-    border: none; 
+    border: none;
     padding: 0;
 }
 
 .btn {
-    height: 56px;
-    min-width: 190px;
-    border-radius: 28px;
+    height: 55px;
+    min-width: 30px;
+    border-radius: 27.5px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
     font-size: 16px;
+    padding: 0 33px;
 }
 
 .btn-sm {
@@ -104,4 +105,175 @@ body {
     height: 36px;
     background-color: $btn;
     border-radius: 18px;
+}
+
+.sort__category-item,
+.sort__category-item--light {
+    li {
+        font-size: 15px;
+        min-width: 28px;
+        min-height: 28px;
+        padding: 0 16px;
+        background-color: #f1f3f6;
+        border-radius: 14px;
+        display: inline-block;
+    }
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0 30px;
+
+    &__title {
+        font-size: 30px;
+        color: #000;
+    }
+}
+
+.sort__category-item--light {
+    li {
+        a {
+            color: #868c96;
+        }
+    }
+}
+
+.sort__category-item {
+    li {
+        a {
+            color: #747b86;
+        }
+    }
+}
+
+.product__card {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    max-width: 360px;
+    width: 100%;
+    min-height: 530px;
+    overflow: hidden;
+
+    &-preview {
+        max-width: 360px;
+        width: 100%;
+        height: 230px;
+        position: relative;
+        
+
+        &:hover .product__card-img--layer {
+            height: 230px;
+        }
+    }
+
+    &-img {
+        max-width: 360px;
+        width: 100%;
+        height: 230px;
+        
+        
+
+        &--layer {
+            max-width: 360px;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(to right, rgba(112, 73, 183, 1) 0%, rgba(13, 114, 222, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            transition: all .3s linear;
+
+            &:hover button {
+                transform: scale(1);
+                transition: transform .5s linear,
+                color .3s linear,
+                background-color .3s linear;
+            }
+
+            button {
+                @include f500;
+                font-size: 15px;
+                color: #fff;
+                height: 45px;
+                min-width: 20px;
+                border-radius: 22.5px;
+                border: 1px solid #f4f4f4;
+                background-color: transparent;
+                padding: 0 30px;
+                cursor: pointer;
+                margin: 0 5px;
+                transform: scale(0);
+
+                &:hover {
+                    background-color: #fff;
+                    color: $btn;
+                }
+            }
+        }
+    }
+
+    &-item {
+        padding: 30px 30px 27px;
+    } 
+
+    &-title {
+        font-size: 20px;
+        @include f500;
+        color: #000;
+    }
+
+    &-info {
+        height: 62px;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #ececec;
+        padding: 0 30px;
+        font-size: 15px;
+    }
+
+    &-price {
+        height: 30px;
+        min-width: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px;
+        background-color: #e6f1fd;
+        padding: 0 17px;
+        @include f500;
+        color: $btn;
+        margin-right: 13px;
+    }
+
+    &-likes {
+        color: #6f7d8d;
+        margin-right: 16px;
+        span {
+            color: #7f4ec2
+        }
+    }
+
+    &-rate {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+
+    &-sellers {
+        margin-left: auto;
+        color: $btn;
+    }
+}
+
+.hide {
+    display: none;
 }
