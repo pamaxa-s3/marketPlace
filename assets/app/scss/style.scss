@@ -577,7 +577,7 @@
     &__top {
         margin-bottom: 30px;
         position: relative;
-        
+
 
         &-filter {
             color: #747b86;
@@ -621,11 +621,12 @@
 
             li {
                 cursor: pointer;
+
                 &:hover a {
                     color: $btn;
                 }
             }
-            
+
 
             a {
                 color: #86747e;
@@ -707,7 +708,7 @@
 }
 
 .followers__top-arrows {
-    background-color: $btn;    
+    background-color: $btn;
 
     .followers-slider__arow {
         border: none;
@@ -721,23 +722,31 @@
     }
 }
 
-.slider-arows__box {
-    width: 110px;
-    height: 45px;
-    border-radius: 22.5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+.fun {
+    background-color: #212225;
 
-    .slider__arow {
-        border: none;
-        padding: 0 5px;
-        margin: 0;
-        background: none;
-        font-size: 14px;
-        color: #fff;
-        outline: none;
-        cursor: pointer;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        min-height: 350px;
     }
+
+    &__item {
+        line-height: 36px;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    &__icon {
+        font-size: 48px;
+        margin-bottom: 43px;
+    }
+
+    &__num {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
 }

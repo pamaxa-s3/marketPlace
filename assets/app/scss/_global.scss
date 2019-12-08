@@ -277,3 +277,40 @@ body {
 .hide {
     display: none;
 }
+
+.slider-arows__box {
+    width: 110px;
+    height: 45px;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+    .slider__arow {
+        border: none;
+        padding: 0 5px;
+        margin: 0;
+        background: none;
+        font-size: 14px;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.yellow {
+    color: #feb71d;
+}
+
+.blue {
+    color: #58c9e9;
+}
+
+.green {
+    color: #77de51;
+}
+
+.pink {
+    color: #ff6a6d;
+}
