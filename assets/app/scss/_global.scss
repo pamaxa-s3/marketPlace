@@ -79,6 +79,9 @@ body {
     font-size: 36px;
     line-height: 28px;
     text-align: center;
+    span {
+        color: $btn;
+    }
 }
 
 .btn,

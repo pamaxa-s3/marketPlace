@@ -755,10 +755,6 @@
 
     &__title {
         margin-bottom: 30px;
-
-        span {
-            color: $btn;
-        }
     }
 
     &__text {
@@ -850,6 +846,7 @@
         button {
             background-color: #fff;
             border: 1px solid #fff;
+            transition: all .3s linear;
 
             &:hover {
                 background-color: transparent;
@@ -885,5 +882,133 @@
         max-width: 585px;
         width: 100%;
         margin: 0 auto 40px;
+    }
+}
+
+.feedback {
+    margin: 120px 0;
+
+    &__title {
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        max-width: 680px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &-slider {
+        margin-bottom: 60px;
+        position: relative;
+
+        &__arows {
+
+            .feedback-slider__prev,
+            .feedback-slider__next {
+                position: absolute;
+                top: 50%;
+                z-index: 2;
+                font-size: 14px;
+                line-height: 50px;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #fff;
+                box-shadow: 0px 4px 15px 0px rgba(67, 67, 67, 0.15);
+            }
+
+            .feedback-slider__prev {
+                color: #7347c1;
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
+
+            .feedback-slider__next {
+                color: $btn;
+                right: 0;
+                transform: translate(50%, -50%);
+            }
+        }
+    }
+
+    &__item {
+        max-width: 553px;
+        width: 100%;
+        padding: 50px 40px 45px;
+        background-color: #fff;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.08);
+        border-left: 2px solid $btn;
+        position: relative;
+        min-height: 320px;
+        margin-right: 32px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+
+        &::after {
+            content: '';
+            background-image: url(../images/icons/bubble.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 60px;
+            height: 50px;
+            fill: #e8e8e8;
+            position: absolute;
+            top: 40px;
+            right: 50px;
+        }
+    }
+
+    .slick-list {
+        padding: 51px 0;
+    }
+
+    &__author {
+        display: flex;
+        margin-bottom: 20px;
+
+        &-avatar {
+            width: 80px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 20px;
+        }
+
+        &-name {
+            font-size: 20px;
+            color: #000;
+            margin-bottom: 3px;
+            max-width: 310px;
+            width: 100%;
+        }
+
+        &-pos {}
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        background-color: $btn;
+        border: 1px solid $btn;
+        transition: all .3s linear;
+
+        &:hover {
+            color: $btn;
+            background-color: transparent;
+        }
     }
 }

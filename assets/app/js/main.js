@@ -94,6 +94,31 @@ $(function () {
 
     //slider-followers END
 
+     //slider-feedback
+     $('.feedback__inner').slick({
+        //  infinite: true,
+         slidesToShow: 2,
+         slidesToScroll: 2,
+         arrows: false,
+         dots: false,
+         variableWidth: true,
+     });
+
+     $('.feedback-slider__prev').on('click', function (event) {
+         event.preventDefault();
+
+         $('.feedback__inner').slick('slickPrev')
+     });
+
+
+     $('.feedback-slider__next').on('click', function (event) {
+         event.preventDefault();
+
+         $('.feedback__inner').slick('slickNext')
+     });
+
+     //slider-feedback END
+
 
     // $('.js-range-slider').ionRangeSlider({
     //     type: 'double',
