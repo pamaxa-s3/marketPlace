@@ -784,9 +784,9 @@
         margin-bottom: 30px;
         position: relative;
         padding: 48px 35px;
-        
+
         &::before {
-            
+
             position: absolute;
             top: 20px;
             left: 20px;
@@ -829,5 +829,61 @@
 
     .item-6::before {
         content: '06';
+    }
+}
+
+.sell-buy {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 100px 30px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 50%;
+
+        button {
+            background-color: #fff;
+            border: 1px solid #fff;
+
+            &:hover {
+                background-color: transparent;
+                color: #fff;
+            }
+        }
+
+        .btn--blue {
+            color: $btn;
+        }
+
+        .btn--violet {
+            color: #7347c1;
+        }
+    }
+
+    &__icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        margin: 47px 0 21px;
+    }
+
+    &__text {
+        color: #fff;
+        max-width: 585px;
+        width: 100%;
+        margin: 0 auto 40px;
     }
 }
