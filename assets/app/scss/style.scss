@@ -748,5 +748,86 @@
         font-size: 36px;
         margin-bottom: 10px;
     }
+}
 
+.advantages {
+    padding: 120px 0 72px;
+
+    &__title {
+        margin-bottom: 30px;
+
+        span {
+            color: $btn;
+        }
+    }
+
+    &__text {
+        max-width: 680px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 57px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        width: 361px;
+        height: 373px;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        padding: 48px 35px;
+        
+        &::before {
+            
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            @include f300;
+            color: rgba(92, 135, 248, .2);
+            font-size: 48px;
+        }
+
+        &-icon {
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+
+        &-title {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 20px;
+        }
+    }
+
+    .item-1::before {
+        content: '01';
+    }
+
+    .item-2::before {
+        content: '02';
+    }
+
+    .item-3::before {
+        content: '03';
+    }
+
+    .item-4::before {
+        content: '04';
+    }
+
+    .item-5::before {
+        content: '05';
+    }
+
+    .item-6::before {
+        content: '06';
+    }
 }

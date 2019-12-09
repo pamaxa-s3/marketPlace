@@ -3,6 +3,11 @@ $bg-grey: #eff1f5;
 $btn: #0674ec;
 $icon: #7e8fa1;
 
+@mixin f300 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
 @mixin f500 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
