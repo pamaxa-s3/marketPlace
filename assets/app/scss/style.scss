@@ -1139,3 +1139,36 @@
     }
 }
 
+.banner {
+    background: linear-gradient(to right, rgba(102, 30, 144, 1) 0%, rgba(12, 57, 218, 1) 100%);
+    padding: 110px 0;
+    text-align: center;
+    color: #fff;
+
+    &__inner {
+        max-width: 680px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-size: 18px;
+        margin-bottom: 44px;
+    }
+
+    button {
+     color: $btn;
+     background-color: #fff;
+     border: 1px solid #fff;
+     transition: all .3s;
+     &:hover {
+         background-color: transparent;
+         color: #fff;
+     }   
+    }
+}
