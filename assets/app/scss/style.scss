@@ -994,8 +994,6 @@
             max-width: 310px;
             width: 100%;
         }
-
-        &-pos {}
     }
 
     button {
@@ -1012,3 +1010,132 @@
         }
     }
 }
+
+.news {
+    padding: 120px 0;
+    background-color: #eff1f5;
+
+    &__text {
+        max-width: 680px;
+        text-align: center;
+        margin: 27px auto 52px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+
+        &-img {
+            width: 360px;
+            height: 230px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &-content {
+            padding: 27px 33px 27px 27px;
+            border-bottom: 1px solid #ececec;
+            max-height: 235px;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &-title {
+            font-size: 22px;
+            color: #000;
+            @include f500;
+            margin-bottom: 27px;
+        }
+
+        &-text {
+            color: $text;
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 30px;
+            font-size: 15px;
+            color: #7e7e7e;
+        }
+
+        &-date {
+            color: #999;
+            padding-right: 45px;
+            border-right: 1px solid #ececec;
+            line-height: 40px;
+
+            span {
+                color: $btn;
+            }
+        }
+
+        &-feedback {
+            color: $text;
+        }
+
+        &-view {
+            color: $text;
+        }
+    }
+}
+
+.support {
+    padding: 60px 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        border-right: 1px solid #e8eaf3;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__item {
+        padding: 0 130px;
+        font-size: 24px;
+        color: #000;
+        width: 50%;
+        display: flex;
+    }
+
+    &__icon {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 117px;
+        margin: 0 auto 27px;
+    }
+
+    &-left {
+        margin-left: auto;
+
+        span {
+            color: $btn;
+        }
+    }
+
+    &-right span {
+        color: #7347c1;
+    }
+}
+
