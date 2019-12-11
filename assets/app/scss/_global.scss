@@ -120,6 +120,15 @@ body {
         background-color: #f1f3f6;
         border-radius: 14px;
         display: inline-block;
+        cursor: pointer;
+        transition: all .2s linear;
+        
+        &:hover {
+            background-color: $btn;
+        }
+        &:hover a {
+            color: #fff;
+        }
     }
 }
 
@@ -275,6 +284,12 @@ body {
         margin-left: auto;
         color: $btn;
     }
+
+    &-price:hover,
+    &-likes:hover,
+    &-sellers:hover {
+        color: lighten($color: #7385cd, $amount: 0)
+    }
 }
 
 .hide {
@@ -299,6 +314,11 @@ body {
         color: #fff;
         outline: none;
         cursor: pointer;
+        transition: all .2s linear;
+
+        &:hover {
+            color: #000;
+        }
     }
 }
 
