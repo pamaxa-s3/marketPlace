@@ -697,16 +697,13 @@
             cursor: pointer;
 
             &::before {
-                content: '';
-                background-image: url(../images/icons/dots.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                width: 5px;
-                height: 20px;
+                content: "\f142";
+                font-family: 'icomoon';
+                font-size: 30px;
+                color: #a3b1c4;
                 position: absolute;
                 right: 0;
-                top: 22px;
+                top: 0px;
             }
 
             &:hover .newest__top-dropdown {
