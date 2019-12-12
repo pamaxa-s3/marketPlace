@@ -370,14 +370,14 @@
     }
 }
 
+
 .features__dropdown-inner {
     max-width: 190px;
     width: 100%;
     position: absolute;
     top: 90px;
     right: 295px;
-    font-size: 30px;
-    display: none;
+ 
 }
 
 .features__dropdown {
@@ -387,6 +387,7 @@
     box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
     font-size: 15px;
     position: relative;
+    display: none;
 
     &::after {
         content: '';
@@ -395,6 +396,10 @@
         top: -26px;
         border: 12px solid transparent;
         border-bottom: 14px solid #fff;
+    }
+
+    &.active {
+        display: block;
     }
 
     a {

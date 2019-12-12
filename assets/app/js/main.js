@@ -61,6 +61,29 @@ $(function () {
         }
     });
 
+    //features__dropdown active
+
+    $(function () {
+        $('.features__dropdown-active').mouseover(function () {
+
+            $('.features__dropdown').addClass('active');
+        });
+
+        $(".features__dropdown").mouseover(function () {
+
+            $('.features__dropdown').addClass('active');
+        });
+
+        $(".features__dropdown").mouseout(function () {
+            $('.features__dropdown').removeClass('active');
+        });
+
+        $(".features__dropdown-active").mouseout(function () {
+            $('.features__dropdown').removeClass('active');
+        });
+    });
+
+
     // filter added class 'active'
 
     $(".fil").click(function () {
